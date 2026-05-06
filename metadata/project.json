@@ -1,0 +1,32 @@
+{
+  "index": 695,
+  "phase": 2,
+  "batch": 78,
+  "name": "ledger-data-warehouse-mesh",
+  "planned_name": "ledger-data-warehouse-mesh",
+  "language": "C++",
+  "category": "Data engineering",
+  "goal": "Build a C++ toolkit that studies warehouse behavior through layout fixtures, with stable geometry snapshots and no network dependency.",
+  "repository_url": "https://github.com/ZachL111/ledger-data-warehouse-mesh",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 173,
+    "risk_penalty": 7,
+    "latency_penalty": 3,
+    "weight_bonus": 4,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}

@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,58,82,15,11,6,100,review,data engineering baseline scenario exercises the review path for bounded failure handling
+pressure,78,70,26,22,11,38,review,data engineering pressure scenario exercises the review path for bounded failure handling
+surge,98,100,24,17,13,157,review,data engineering surge scenario exercises the review path for bounded failure handling
+degraded,63,62,37,24,5,-71,review,data engineering degraded scenario exercises the review path for bounded failure handling
+recovery,86,108,16,10,12,210,accept,data engineering recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,71,80,20,18,8,68,review,data engineering boundary scenario exercises the review path for bounded failure handling
