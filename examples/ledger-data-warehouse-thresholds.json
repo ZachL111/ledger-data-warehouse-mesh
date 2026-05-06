@@ -1,0 +1,17 @@
+{
+  "repo": "ledger-data-warehouse-mesh",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 175,
+    "watch": 100
+  },
+  "terms": [
+    "schema drift",
+    "lineage depth",
+    "partition skew",
+    "quality gap"
+  ]
+}
